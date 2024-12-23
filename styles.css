@@ -1,0 +1,177 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-side img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box,
+.signup-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-box h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #3897f0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.facebook-btn {
+  background-color: #3b5998;
+}
+
+a {
+  text-decoration: none;
+  color: #00376b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.separator span {
+  margin: 0 10px;
+  color: #999;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  font-size: 12px;
+  color: grey;
+}
+
+.meta {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.meta p {
+  color: grey;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side img {
+    display: none; /* Rasmni kichik ekranda yashirish */
+  }
+
+  .login-box,
+  .signup-box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .navbar a {
+    font-size: 10px; /* Linklarni kichikroq qilish */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box h1 {
+    font-size: 20px; /* Sarlavha kichrayadi */
+  }
+
+  input {
+    padding: 8px; /* Input maydonlarni moslash */
+  }
+
+  button {
+    padding: 8px; /* Tugmalar moslashadi */
+  }
+
+  .navbar a {
+    font-size: 8px; /* Linklarni yana kichraytirish */
+  }
+
+  .ntwork img {
+    width: 100px; /* App store rasmlarini kichraytirish */
+  }
+}
