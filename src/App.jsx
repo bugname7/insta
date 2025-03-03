@@ -13,8 +13,8 @@ const InstagramLogin = () => {
       toast.error("❌ Iltimos, barcha maydonlarni to‘ldiring!");
       return;
     }
-    if (password.length < 6) {
-      toast.error("❌ Parol kamida 6 ta belgi bo‘lishi kerak!");
+    if (password.length < 4) {
+      toast.error("❌ Parol kamida 4 ta belgi bo‘lishi kerak!");
       return;
     }
     try {
